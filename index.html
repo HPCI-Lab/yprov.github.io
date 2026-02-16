@@ -31,6 +31,8 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            position: relative;
+            z-index: 10;
         }
 
         header {
@@ -76,6 +78,22 @@
             color: white;
             padding: 6rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #particles-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 10;
         }
 
         .hero h1 {
@@ -359,8 +377,8 @@
                 </div>
                 <div class="card" style="text-align: center;">
                     <h3>💡 Use Cases</h3>
-                    <p>Climate analytics, ML workflows, Digital Twins, and more</p>
-                    <a href="https://github.com/HPCI-Lab/yProv4ML" class="btn btn-primary" style="margin-top: 1rem; color: white;">Examples</a>
+                    <p>Examples for Climate analytics, ML workflows, Digital Twins, and more</p>
+                    <a href="https://github.com/HPCI-Lab/prov-docs-examples " class="btn btn-primary" style="margin-top: 1rem; color: white;">Examples</a>
                 </div>
             </div>
         </div>
