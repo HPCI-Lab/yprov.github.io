@@ -222,6 +222,27 @@
             margin-bottom: 0.6rem;
         }
 
+        /* ── TUTORIALS VIDEO STYLING ── */
+        .video-container {
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #000;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .video-container video {
+            width: 100%;
+            display: block;
+        }
+
+        /* anonymity tweak for card layouts with videos */
+        .card-video {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         /* ── COMMUNITY ── */
         .community-card {
             text-align: center;
@@ -278,6 +299,7 @@
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
             <li><a href="#community">Community</a></li>
         </ul>
     </nav>
@@ -386,6 +408,54 @@
                     <h3>🌐 y2Graph</h3>
                     <p>Python tool for building provenance graphs from YAML</p>
                     <a href="https://github.com/HPCI-Lab/y2Graph">Repository →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorials" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Video Tutorials</h2>
+            <p style="text-align: center; color: var(--gray-mid); margin-bottom: 2rem;">Learn how to harness the yProv ecosystem for your workflows</p>
+            <div class="grid grid-3">
+                <div class="card card-video">
+                    <div>
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="https://raw.githubusercontent.com/HPCI-Lab/yprov.github.io/assets/getting-started.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>🚀 Getting Started with yProv</h3>
+                        <p>An introduction to setting up the CLI tool and establishing your initial provenance store tracking environment.</p>
+                    </div>
+                    <a href="https://github.com/HPCI-Lab/yProvStore-cli">View Tool Repo →</a>
+                </div>
+                <div class="card card-video">
+                    <div>
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="https://raw.githubusercontent.com/HPCI-Lab/yprov.github.io/assets/ml-tracking.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>🧠 Tracking ML Pipelines</h3>
+                        <p>How to use yProv4ML to seamlessly monitor dataset lineages, training scripts, and model metrics inside Python workflows.</p>
+                    </div>
+                    <a href="https://github.com/HPCI-Lab/yProv4ML">View ML Repo →</a>
+                </div>
+                <div class="card card-video">
+                    <div>
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="https://raw.githubusercontent.com/HPCI-Lab/yprov.github.io/assets/explorer-walkthrough.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Visualizing with Explorer</h3>
+                        <p>A deep-dive tutorial mapping complex workflow runs into granular graphics using the yProv Explorer interactive GUI.</p>
+                    </div>
+                    <a href="https://github.com/HPCI-Lab/yprov-explorer">View Explorer Repo →</a>
                 </div>
             </div>
         </div>
